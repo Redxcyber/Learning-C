@@ -7,7 +7,7 @@ void main(){
     scanf("%f",&rad);
     area = 3.14*rad*rad;
     circumference = 2*3.14*rad;
-    printf("\033[0;32Area of circle : %f\033[0m",area);
+    printf("Area of circle : %f\n",area);
     printf("Circumference of circle : %f",circumference);
 
 }
