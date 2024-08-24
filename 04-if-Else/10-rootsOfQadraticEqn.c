@@ -15,7 +15,7 @@ void main(){
         root2 = (-b - sqrt(D))/deno;
         printf("Root1 = %.2f\nRoot2 = %.2f",root1,root2);
     }
-    else if(D=0){
+    else if(D==0){
         printf("Roots are real and equal\n");
         root1 = -b/deno;
         printf("Root1 = %.2f\nRoot2 = %.2f",root1,root1);
