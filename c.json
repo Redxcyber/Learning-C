@@ -1,0 +1,44 @@
+{
+	
+	"c boilerplate by Pranav": {
+		"prefix": "cb",
+		"body": [
+			"#include<stdio.h>",
+			"int main(){",
+			"\t$1",
+			"\treturn 0;",
+			"}"
+		],
+		"description": "c language boilerplate"
+	},
+	"if else snippet by Pranav": {
+		"prefix": "cif",
+		"body": [
+			"if($1){",
+			"\t$2",
+			"}else{",
+			"\t$3",
+			"}"
+		],
+		"description": "if else snippet"
+	},
+	"for snippet by Pranav": {
+		"prefix": "cfor",
+		"body": [
+			"for($1; $2; $3){",
+			"\t$4",
+			"}"
+		],
+		"description": "for loop snippet"
+	},
+	"while snippet by pranav": {
+		"prefix": "cwhile",
+		"body": [
+			"while($1){",
+			"\t$2",
+			"}"
+		],
+		"description": "while loop snippet"
+	}
+
+}
