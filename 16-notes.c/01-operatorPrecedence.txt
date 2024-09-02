@@ -1,0 +1,96 @@
+1. Postfix Operators (Highest Precedence)
+--> Operators: (), [], ->, ., ++, --
+--> Associativity: Left to Right
+
+
+2. Unary Operators
+--> Operators: +, -, !, ~, ++, --, *, &, sizeof, _Alignof, (type)
+--> Associativity: Right to Left
+
+
+3. Pointer-to-member Operators
+--> Operators: *, &
+--> Associativity: Left to Right
+
+
+4. Multiplicative Operators
+--> Operators: *, /, %
+--> Associativity: Left to Right
+
+
+5. Additive Operators
+--> Operators: +, -
+--> Associativity: Left to Right
+
+
+6. Shift Operators
+--> Operators: <<, >>
+--> Associativity: Left to Right
+
+
+7. Relational Operators
+--> Operators: <, <=, >, >=--> 
+--> Associativity: Left to Right
+
+
+9. Bitwise AND
+--> Operators: &
+--> Associativity: Left to Right
+
+
+10. Bitwise XOR
+--> Operators: ^
+--> Associativity: Left to Right
+
+
+11. Bitwise OR
+--> Operators: |
+--> Associativity: Left to Right
+
+
+12. Logical AND
+--> Operators: &&
+--> Associativity: Left to Right
+
+
+13. Logical OR
+--> Operators: ||
+--> Associativity: Left to Right
+
+
+14. Conditional Operator (Ternary)
+--> Operators: ? :
+--> Associativity: Right to Left
+
+
+15. Assignment Operators
+--> Operators: =, +=, -=, *=, /=, %=, <<=, >>=, &=, ^=, |=
+--> Associativity: Right to Left
+
+
+16. Comma Operator (Lowest Precedence)
+--> Operators: ,
+--> Associativity: Left to Right
+
+
+Summary of Precedence Groups:
+
+Highest Precedence:
+--> Postfix (e.g., a++, func())
+--> Unary (e.g., -a, *p, sizeof)
+
+Middle Precedence:
+--> Multiplicative (e.g., a * b, a / b)
+--> Additive (e.g., a + b, a - b)
+--> Shift (e.g., a << b, a >> b)
+--> Relational and Equality (e.g., a < b, a == b)
+--> Bitwise (e.g., a & b, a | b)
+
+Lowest Precedence:--> 
+--> Logical (e.g., a && b, a || b)
+--> Conditional (? :)
+--> Assignment (e.g., a = b, a += b)
+--> Comma (,)
+Understanding this precedence order is crucial when writing expressions to ensure they evaluate as expected. You can always use parentheses () to explicitly define the order of evaluation and override the default precedence.
+
+
