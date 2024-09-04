@@ -1,14 +1,15 @@
 #include<stdio.h>
 void main(){
-    int n;
+    int decimal;
     int binary = 0;
+    int base = 1;
     printf("Enter a number : ");
-    scanf("%d",&n);
-    while(n>0){
-        int digit = n%2; 
-        n = n/2;
-        // printf("%d ",digit);
-        binary = binary*10+digit;
+    scanf("%d",&decimal);
+    while(decimal>0){
+        int rem = decimal%2; 
+        binary = binary + (rem * base);
+        decimal = decimal/2;
+        base *= 10;
     }
     printf("binary = %d",binary);
 }
