@@ -12,9 +12,8 @@ void main(){
     char sex;
     printf("Enter your salary : ");
     scanf("%d",&salary);
-    scanf("%s");
     printf("Enter your sex , m for male , f for female : ");
-    scanf("%c",&sex);
+    scanf(" %c",&sex);
     if(salary<10000){
         if(sex == 'm' || sex == 'M'){
             salary = 10000+(10000*7/100);
