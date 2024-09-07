@@ -1,3 +1,5 @@
+//add all elements of the array
+
 #include<stdio.h>
 void main(){
     int i,n,sum=0;
@@ -6,8 +8,8 @@ void main(){
 
     int num[n];
     int length = sizeof(num)/sizeof(num[0]); 
-    printf("Enter numbers : ");
     for(i=0; i<length; i++){
+        printf("Enter numbers : ");
         scanf("%d",&num[i]);
     }
     for(i=0; i<length; i++){

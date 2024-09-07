@@ -11,8 +11,8 @@ void main(){
     int marks[n];
     int length = sizeof(marks)/sizeof(marks[0]);
     
-    printf("Enter marks of subjects : ");    
     for(i=0; i<length; i++){
+        printf("Enter marks of subjects : ");    
         scanf("%d",&marks[i]);
         sum += marks[i];
     }

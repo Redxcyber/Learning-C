@@ -1,3 +1,5 @@
+//print maximum element of the array
+
 #include<stdio.h>
 void main(){
     int i,n;
@@ -6,12 +8,12 @@ void main(){
 
     int num[n];
     int length = sizeof(num)/sizeof(num[0]); 
-    printf("Enter numbers : ");
     for(i=0; i<length; i++){
+        printf("Enter numbers : ");
         scanf("%d",&num[i]);
     }
     int max = num[0];
-    for(i=0; i<length; i++){
+    for(i=1; i<length; i++){
         if(num[i] > max){ // or (max < num[i])
             max = num[i];
         }
