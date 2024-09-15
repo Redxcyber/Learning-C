@@ -47,8 +47,5 @@ int main(){
     printf("\n--------------------------------------------------------\n");
     printf("Class Average : %.2f\n",totalAvg/10);
 
-
-
-
     return 0;
 }
