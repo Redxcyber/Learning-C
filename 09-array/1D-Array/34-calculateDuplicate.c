@@ -28,6 +28,7 @@ int main(){
         for(int j=i+1; j<size; j++){
             if(num[j]==num[i]){
                 duplicates++;
+                break;
             }
         }
     }
