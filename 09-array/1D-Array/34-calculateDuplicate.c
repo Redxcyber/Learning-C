@@ -1,14 +1,17 @@
 //calculate number of duplicate element in array
 
-#include<stdio.h>
-int main(){
-    int size;
-    int duplicates=0;
-    printf("enter the size of array : ");
-    scanf("%d",&size);
-    
+#include <stdio.h>
+
+int main() {
+    int size, i, j, count = 0;
+
+    // Input the size of the array
+    printf("Enter the number of elements in the array: ");
+    scanf("%d", &size);
+
     //array declaration
-    int num[size];
+    int num[size], freq[size];
+
 
     //input array elemnts
     printf("\nenter elements of the array ->\n");
@@ -17,24 +20,37 @@ int main(){
         scanf("%d",&num[i]);
     }
 
+
     //print original array
     printf("\narray : ");
     for(int i=0; i<size; i++){
         printf("%d ",num[i]);
     }
 
-    //calculate number of duplicates
-    for(int i=0; i<size; i++){
-        for(int j=i+1; j<size; j++){
-            if(num[j]==num[i]){
-                duplicates++;
-                break;
+
+    // Find duplicates and count them
+    for (i = 0; i < size; i++) {
+        int countDuplicate = 1;  // Count of current element
+        for (j = i + 1; j < size; j++) {
+            if (num[i] == num[j]) {
+                countDuplicate++;
+                freq[j] = 0;  // Mark this as already counted
             }
+        }
+        if (freq[i] != 0) {
+            freq[i] = countDuplicate;  // Store the count of the element
         }
     }
 
-    //print number of duplicates
-    printf("\nnumber of duplicates : %d\n\n",duplicates);
+    // Count the number of elements that appear more than once
+    for (i = 0; i < size; i++) {
+        if (freq[i] > 1) {
+            count++;
+        }
+    }
+
+    // Output the number of duplicates
+    printf("\nNumber of duplicate elements in the array: %d\n", count);
 
     return 0;
 }
