@@ -50,7 +50,7 @@ int main() {
     }
 
     // Output the number of duplicates
-    printf("\nNumber of duplicate elements in the array: %d\n", count);
+    printf("\nNumber of unique duplicate elements in the array: %d\n", count);
 
     return 0;
 }

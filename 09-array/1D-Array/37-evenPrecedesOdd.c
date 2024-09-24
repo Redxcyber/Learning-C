@@ -24,16 +24,20 @@ int main(){
         printf("%d ",num[i]);
     }
 
-    //reorder even and odd element
-    int oddIndex = 0;
-    int evenIndex = size-1;
+    //reorder odd element
+    int index = 0;
     for(int i=0; i<size; i++){
         if(num[i]%2 != 0){
-            new[oddIndex] = num[i];
-            oddIndex++;
-        }else{
-            new[evenIndex] = num[i];
-            evenIndex--;
+            new[index] = num[i];
+            index++;
+        }
+    }
+
+    //reorder even element
+    for(int i=0; i<size; i++){
+        if(num[i]%2 == 0){
+            new[index] = num[i];
+            index++;
         }
     }
 
