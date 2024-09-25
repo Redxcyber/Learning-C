@@ -18,7 +18,8 @@ int main(){
 
     if(num<0){
         printf("Negative numbers are not allowed ");
-
+        return 1;
+        
     }else{
         for(int i=num; i>0; i/=10){
             digitCount++;
