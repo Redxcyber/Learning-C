@@ -1,4 +1,4 @@
-//convert string to uppercasse and to lowercase
+//convert string to uppercasse and to lowercase and store result in new str
 
 #include<stdio.h>
 int main(){
@@ -20,7 +20,9 @@ int main(){
             upperStr[i] = str[i];
         }
     }
-    upperStr[i] = '\0'; //null terminator for upperStr
+
+    //null terminator for upperStr
+    upperStr[i] = '\0'; 
     printf("Uppercasse : %s\n",upperStr);
 
     //convert to lowercase
@@ -31,7 +33,10 @@ int main(){
             lowerStr[j] = str[j];
         }
     }
-    lowerStr[j] = '\0'; //null terminator for lowerStr
+
+    //null terminator for lowerStr
+    lowerStr[j] = '\0'; 
     printf("Lowercasse : %s",lowerStr);
+    
     return 0;
 }
