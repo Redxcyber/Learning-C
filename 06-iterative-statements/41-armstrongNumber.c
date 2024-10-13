@@ -28,10 +28,7 @@ int main(){
             int digit = i%10;
             int powerOfDigit = power(digit, digitCount); 
             sumOfPowerOfDigit += powerOfDigit;
-            printf("powerOfDigit = %d\n",powerOfDigit);
         }
-        printf("sumOfPowerOfDigit = %d\n",sumOfPowerOfDigit);
-        printf("num = %d\n",num);
         if(sumOfPowerOfDigit==num){
             printf("Yes, %d is armstrong number\n\n",num);
         }else{
