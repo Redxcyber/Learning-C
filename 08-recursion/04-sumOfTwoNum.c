@@ -1,19 +1,18 @@
 //sum of two numbers using recursion
 
-#include<stdio.h>
-int main(){
-    int n1,n2,result=0;
-    printf("Enter two numbers : ");
-    scanf("%d %d",&n1,&n2);
-    result = sum(n1,n2);
-    printf("sum = %d",sum);
-    return 0;
+#include <stdio.h>
+int recursiveSum(int a, int b) {
+    if (b == 0) 
+        return a;
+    else 
+        return recursiveSum(a + 1, b - 1);
 }
 
-int sum(int a, int b){
-    if(b==0){
-        return a;
-    }else if(b>0){
-        return a + sum(a,b-1);
-    }
+int main() {
+    int num1, num2;
+    printf("Enter two numbers: ");
+    scanf("%d %d", &num1, &num2);
+    int result = recursiveSum(num1, num2);
+    printf("Sum of %d and %d is %d\n", num1, num2, result);
+    return 0;
 }
