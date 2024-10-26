@@ -5,7 +5,7 @@ int auxFunc(int x){
     return factorial(x,1);
 }
 int factorial(int x, int res){
-   if(x==1) return res;
+   if(x==1 || x==0) return res;
    else return factorial(x-1,x*res);
 }
 int main(){
@@ -40,7 +40,7 @@ int auxFunc(int x){
     return factorial(x,1);
 }
 int factorial(int x, int res){
-   if(x==1) return res;
+   if(x==1 || x==0) return res;
    else return factorial(x-1,x*res);
 }
 
@@ -48,7 +48,7 @@ int factorial(int x, int res){
 //reordering functions to avoid warning and errors
 #include<stdio.h>
 int factorial(int x, int res){
-   if(x==1) return res;
+   if(x==1 || x==0) return res;
    else return factorial(x-1,x*res);
 }
 int auxFunc(int x){
