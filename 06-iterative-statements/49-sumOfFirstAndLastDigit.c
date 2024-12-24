@@ -6,8 +6,7 @@ int main(){
 
     //count total digits in number 
     int count=0;
-    for(int i=num; i>0; i%10, i/=10){
-        // int rem = i%10;
+    for(int i=num; i>0; i/=10){
         count++;
     }
     printf("Total number of digits = %d\n",count);
